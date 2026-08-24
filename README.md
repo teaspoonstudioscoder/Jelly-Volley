@@ -16,3 +16,5 @@ The itch.io version has sounds. The public repo version does not.
 
 Not affiliated with Blobby Volley or its authors.
 Code is MIT-licensed.
+<img width="1913" height="1080" alt="JellyVolley2" src="https://github.com/user-attachments/assets/30cfd5ea-d0a3-494f-a790-c06056c72e5a" />
+<img width="2560" height="1440" alt="JellyVolley" src="https://github.com/user-attachments/assets/049e434c-8336-4261-aab0-f83ee786d8d5" />
