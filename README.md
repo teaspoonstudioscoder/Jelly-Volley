@@ -4,11 +4,8 @@ If you ever played the old freeware classic Blobby Volley, you already know exac
 
 # Controls
 Red — A and D to move, W to jump
-
 Blue — Left and Right arrow to move, Up arrow to jump
-
 Enter — rematch after a win
-
 Esc — quit
 
 # Rules
