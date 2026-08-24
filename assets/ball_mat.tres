@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dyc2vjr3sob75"]
+
+[ext_resource type="Texture2D" uid="uid://ciah678amkpys" path="res://assets/volleyball_albedo.png" id="1_flu5n"]
+
+[resource]
+albedo_texture = ExtResource("1_flu5n")
+roughness = 0.4

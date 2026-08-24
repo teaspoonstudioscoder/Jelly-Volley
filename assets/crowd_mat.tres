@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://shaders/crowd.gdshader" id="1"]
+
+[resource]
+shader = ExtResource("1")
+shader_parameter/excite = 0.0
+shader_parameter/jump_height = 0.55
+shader_parameter/idle_amount = 0.03

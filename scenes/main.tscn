@@ -1,0 +1,379 @@
+[gd_scene format=3 uid="uid://y4uu6xytd378"]
+
+[ext_resource type="Script" uid="uid://c1bwbqpt75eow" path="res://scripts/main.gd" id="1_jyhfs"]
+[ext_resource type="Environment" uid="uid://cuoj1ybvieo3c" path="res://assets/env.tres" id="2_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://c5y6wejqwjjcl" path="res://assets/stadium.glb" id="2_tefeu"]
+[ext_resource type="Script" uid="uid://ck3rfl64tr0g4" path="res://scripts/player.gd" id="3_tefeu"]
+[ext_resource type="Script" uid="uid://b1qlca71a3r2e" path="res://scripts/ball.gd" id="4_o6xl0"]
+[ext_resource type="Material" uid="uid://dyc2vjr3sob75" path="res://assets/ball_mat.tres" id="6_choun"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tefeu"]
+transparency = 1
+albedo_color = Color(0.27058825, 0.29411766, 0.34509805, 0.8666667)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="BoxMesh_o6xl0"]
+size = Vector3(0.22, 3, 5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o6xl0"]
+albedo_color = Color(0.9607843, 0.9607843, 0.9607843, 1)
+roughness = 0.7
+
+[sub_resource type="BoxMesh" id="BoxMesh_ya4ey"]
+size = Vector3(0.3, 0.18, 5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tipki"]
+albedo_color = Color(0.5411765, 0.41960785, 0.2901961, 1)
+roughness = 0.8
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_eb6dy"]
+top_radius = 0.08
+bottom_radius = 0.08
+height = 3.3
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_85g3d"]
+albedo_color = Color(0.5411765, 0.41960785, 0.2901961, 1)
+roughness = 0.8
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_trceg"]
+top_radius = 0.08
+bottom_radius = 0.08
+height = 3.3
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_choun"]
+albedo_color = Color(0.84705883, 0.22745098, 0.22745098, 1)
+roughness = 0.35
+
+[sub_resource type="SphereMesh" id="SphereMesh_a8y0u"]
+radius = 0.75
+height = 1.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ya4ey"]
+roughness = 0.2
+
+[sub_resource type="SphereMesh" id="SphereMesh_jkv2x"]
+radius = 0.14
+height = 0.28
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eb6dy"]
+roughness = 0.2
+
+[sub_resource type="SphereMesh" id="SphereMesh_jbj1t"]
+radius = 0.14
+height = 0.28
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_trceg"]
+albedo_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+roughness = 0.3
+
+[sub_resource type="SphereMesh" id="SphereMesh_muem4"]
+radius = 0.06
+height = 0.12
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a8y0u"]
+albedo_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+roughness = 0.3
+
+[sub_resource type="SphereMesh" id="SphereMesh_dp3eg"]
+radius = 0.06
+height = 0.12
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jkv2x"]
+albedo_color = Color(0.22745098, 0.41568628, 0.84705883, 1)
+roughness = 0.35
+
+[sub_resource type="SphereMesh" id="SphereMesh_0ld40"]
+radius = 0.75
+height = 1.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbj1t"]
+roughness = 0.2
+
+[sub_resource type="SphereMesh" id="SphereMesh_gqmmt"]
+radius = 0.14
+height = 0.28
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_muem4"]
+roughness = 0.2
+
+[sub_resource type="SphereMesh" id="SphereMesh_yc10j"]
+radius = 0.14
+height = 0.28
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dp3eg"]
+albedo_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+roughness = 0.3
+
+[sub_resource type="SphereMesh" id="SphereMesh_jscy8"]
+radius = 0.06
+height = 0.12
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ld40"]
+albedo_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+roughness = 0.3
+
+[sub_resource type="SphereMesh" id="SphereMesh_pm3ni"]
+radius = 0.06
+height = 0.12
+
+[sub_resource type="SphereMesh" id="SphereMesh_y6deb"]
+radius = 0.45
+height = 0.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yc10j"]
+albedo_color = Color(0.8784314, 0.47058824, 0.09411765, 1)
+roughness = 0.4
+
+[sub_resource type="SphereMesh" id="SphereMesh_og1vs"]
+radius = 0.18
+height = 0.36
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jscy8"]
+albedo_color = Color(0.8784314, 0.47058824, 0.09411765, 1)
+roughness = 0.4
+
+[sub_resource type="SphereMesh" id="SphereMesh_2wyq8"]
+radius = 0.15
+height = 0.3
+
+[node name="Main" type="Node3D" unique_id=1064038965]
+script = ExtResource("1_jyhfs")
+
+[node name="Stadium" parent="." unique_id=252128419 instance=ExtResource("2_tefeu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021595955, -0.020562649, 0.006485939)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=821370667]
+environment = ExtResource("2_tbgi4")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=180003983]
+transform = Transform3D(0.8660254, 0.38302222, -0.32139382, 0, 0.64278764, 0.76604444, 0.5, -0.66341394, 0.5566704, 0, 0, 0)
+light_energy = 1.05
+shadow_enabled = true
+
+[node name="Camera" type="Camera3D" parent="." unique_id=363027734]
+transform = Transform3D(1, 0, 0, 0, 0.99026805, 0.1391731, 0, -0.1391731, 0.99026805, 0, 4.8, 14)
+current = true
+fov = 50.0
+
+[node name="Net" type="Node3D" parent="." unique_id=217463558]
+
+[node name="Mesh" type="MeshInstance3D" parent="Net" unique_id=757122030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_tefeu")
+mesh = SubResource("BoxMesh_o6xl0")
+
+[node name="Band" type="MeshInstance3D" parent="Net" unique_id=1904901452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_o6xl0")
+mesh = SubResource("BoxMesh_ya4ey")
+
+[node name="PostL" type="MeshInstance3D" parent="Net" unique_id=2088943691]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.65, -2.5)
+material_override = SubResource("StandardMaterial3D_tipki")
+mesh = SubResource("CylinderMesh_eb6dy")
+
+[node name="PostR" type="MeshInstance3D" parent="Net" unique_id=910615825]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.65, 2.5)
+material_override = SubResource("StandardMaterial3D_85g3d")
+mesh = SubResource("CylinderMesh_trceg")
+
+[node name="Player1" type="Node3D" parent="." unique_id=133288045]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, 0)
+script = ExtResource("3_tefeu")
+
+[node name="Visual" type="Node3D" parent="Player1" unique_id=1871879302]
+
+[node name="Body" type="MeshInstance3D" parent="Player1/Visual" unique_id=1062710230]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+material_override = SubResource("StandardMaterial3D_choun")
+mesh = SubResource("SphereMesh_a8y0u")
+
+[node name="EyeL" type="MeshInstance3D" parent="Player1/Visual" unique_id=1942398602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.15, -0.24)
+material_override = SubResource("StandardMaterial3D_ya4ey")
+mesh = SubResource("SphereMesh_jkv2x")
+
+[node name="EyeR" type="MeshInstance3D" parent="Player1/Visual" unique_id=347410708]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.15, 0.24)
+material_override = SubResource("StandardMaterial3D_eb6dy")
+mesh = SubResource("SphereMesh_jbj1t")
+
+[node name="PupilL" type="MeshInstance3D" parent="Player1/Visual" unique_id=1664965060]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62, 1.17, -0.24)
+material_override = SubResource("StandardMaterial3D_trceg")
+mesh = SubResource("SphereMesh_muem4")
+
+[node name="PupilR" type="MeshInstance3D" parent="Player1/Visual" unique_id=1734688206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62, 1.17, 0.24)
+material_override = SubResource("StandardMaterial3D_a8y0u")
+mesh = SubResource("SphereMesh_dp3eg")
+
+[node name="Player2" type="Node3D" parent="." unique_id=412753909]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.5, 0, 0)
+script = ExtResource("3_tefeu")
+side = 1
+action_prefix = "p2"
+
+[node name="Visual" type="Node3D" parent="Player2" unique_id=1833093175]
+
+[node name="Body" type="MeshInstance3D" parent="Player2/Visual" unique_id=1739756033]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+material_override = SubResource("StandardMaterial3D_jkv2x")
+mesh = SubResource("SphereMesh_0ld40")
+
+[node name="EyeL" type="MeshInstance3D" parent="Player2/Visual" unique_id=1594373285]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.15, -0.24)
+material_override = SubResource("StandardMaterial3D_jbj1t")
+mesh = SubResource("SphereMesh_gqmmt")
+
+[node name="EyeR" type="MeshInstance3D" parent="Player2/Visual" unique_id=676751718]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.15, 0.24)
+material_override = SubResource("StandardMaterial3D_muem4")
+mesh = SubResource("SphereMesh_yc10j")
+
+[node name="PupilL" type="MeshInstance3D" parent="Player2/Visual" unique_id=1675952511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62, 1.17, -0.24)
+material_override = SubResource("StandardMaterial3D_dp3eg")
+mesh = SubResource("SphereMesh_jscy8")
+
+[node name="PupilR" type="MeshInstance3D" parent="Player2/Visual" unique_id=118907455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62, 1.17, 0.24)
+material_override = SubResource("StandardMaterial3D_0ld40")
+mesh = SubResource("SphereMesh_pm3ni")
+
+[node name="Ball" type="Node3D" parent="." unique_id=1955543722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 4, 0)
+script = ExtResource("4_o6xl0")
+
+[node name="Visual" type="Node3D" parent="Ball" unique_id=1844851927]
+
+[node name="Mesh" type="MeshInstance3D" parent="Ball/Visual" unique_id=1630756391]
+material_override = ExtResource("6_choun")
+mesh = SubResource("SphereMesh_y6deb")
+
+[node name="Spot1" type="MeshInstance3D" parent="Ball/Visual" unique_id=956697049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 0.22, 0.12)
+visible = false
+material_override = SubResource("StandardMaterial3D_yc10j")
+mesh = SubResource("SphereMesh_og1vs")
+
+[node name="Spot2" type="MeshInstance3D" parent="Ball/Visual" unique_id=2082245465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26, -0.25, -0.1)
+visible = false
+material_override = SubResource("StandardMaterial3D_jscy8")
+mesh = SubResource("SphereMesh_2wyq8")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1785384487]
+
+[node name="Root" type="Control" parent="HUD" unique_id=501950828]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ScoreLeft" type="Label" parent="HUD/Root" unique_id=450469155]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 40.0
+offset_bottom = 53.0
+theme_override_colors/font_color = Color(0.8784314, 0.27058825, 0.27058825, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 64
+text = "0"
+
+[node name="ScoreRight" type="Label" parent="HUD/Root" unique_id=1293606275]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_top = 30.0
+offset_right = -30.0
+offset_bottom = 53.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0.27058825, 0.46666667, 0.8784314, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 64
+text = "0"
+
+[node name="Message" type="Label" parent="HUD/Root" unique_id=618111654]
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -0.5
+offset_top = 80.0
+offset_right = 0.5
+offset_bottom = 103.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.2, 0.2, 0.26666668, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+
+[node name="Board" type="Node3D" parent="." unique_id=258389536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18)
+visible = false
+
+[node name="TeamLeft" type="Label3D" parent="Board" unique_id=1049614865]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1, 13.5, 0)
+pixel_size = 0.012
+modulate = Color(1, 0.52156866, 0.47058824, 1)
+outline_modulate = Color(0.023529412, 0.0627451, 0.11764706, 1)
+text = "RED"
+font_size = 64
+outline_size = 16
+
+[node name="TeamRight" type="Label3D" parent="Board" unique_id=4028356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1, 13.5, 0)
+pixel_size = 0.012
+modulate = Color(0.56078434, 0.7294118, 1, 1)
+outline_modulate = Color(0.023529412, 0.0627451, 0.11764706, 1)
+text = "BLUE"
+font_size = 64
+outline_size = 16
+
+[node name="ScoreLeft" type="Label3D" parent="Board" unique_id=1221937051]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1, 11.9, 0)
+pixel_size = 0.019
+modulate = Color(1, 0.31764707, 0.2509804, 1)
+outline_modulate = Color(0.023529412, 0.0627451, 0.11764706, 1)
+text = "0"
+font_size = 128
+outline_size = 28
+
+[node name="Colon" type="Label3D" parent="Board" unique_id=891338834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.1, 0)
+pixel_size = 0.019
+modulate = Color(0.62352943, 0.7058824, 0.8156863, 1)
+outline_modulate = Color(0.023529412, 0.0627451, 0.11764706, 1)
+text = ":"
+font_size = 100
+outline_size = 20
+
+[node name="ScoreRight" type="Label3D" parent="Board" unique_id=156853020]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1, 11.9, 0)
+pixel_size = 0.019
+modulate = Color(0.3529412, 0.5803922, 1, 1)
+outline_modulate = Color(0.023529412, 0.0627451, 0.11764706, 1)
+text = "0"
+font_size = 128
+outline_size = 28
+
+[node name="Ambience" type="AudioStreamPlayer" parent="." unique_id=143205990]
+volume_db = -16.0
+autoplay = true
+
+[node name="Cheer" type="AudioStreamPlayer" parent="." unique_id=919711434]
+volume_db = -6.0
+
+[node name="Whistle" type="AudioStreamPlayer" parent="." unique_id=503839493]
+volume_db = -12.0
+
+[node name="HitSound" type="AudioStreamPlayer" parent="." unique_id=1966356692]
+volume_db = -8.0
