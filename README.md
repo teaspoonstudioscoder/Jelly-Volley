@@ -20,11 +20,14 @@ First to 15 points wins
 Three touches per side, then the ball has to cross
 
 
-
+# Technology
 
 Built with Godot 4.
 
 Code: written with Claude Code and the godot-ai plugin.
+
+
+# Open-Source
 
 The itch.io version has sounds. The public repo version does not.
 
