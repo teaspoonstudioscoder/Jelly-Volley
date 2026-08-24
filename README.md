@@ -2,6 +2,9 @@
 
 If you ever played the old freeware classic Blobby Volley, you already know exactly what this is. Jelly Volley is my own take on it, built from scratch in Godot — same two-button simplicity, new stadium, and a crowd that gets loud when you score.
 
+Jelly Volley is a local two-player volleyball duel played on a single keyboard. Move, jump, time your bounce — that's the whole game. Get the ball over the net, keep it off your own sand, and don't touch it more than three times in a row.
+
+
 # Controls
 Red — A and D to move, W to jump
 
@@ -16,7 +19,7 @@ First to 15 points wins
 
 Three touches per side, then the ball has to cross
 
-Jelly Volley is a local two-player volleyball duel played on a single keyboard. Move, jump, time your bounce — that's the whole game. Get the ball over the net, keep it off your own sand, and don't touch it more than three times in a row.
+
 
 
 Built with Godot 4.
